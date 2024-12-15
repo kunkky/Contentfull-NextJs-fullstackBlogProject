@@ -2,6 +2,7 @@ import React from "react";
 import { createClient } from "contentful";
 import Link from "next/link";
 import Cards from "@/components/Blog/Cards";
+import NotFound from "@/components/Sections/NotFound";
 
 const LIMIT = 6; // Number of posts per page
 
@@ -41,17 +42,22 @@ const Category = ({ blogs, category, currentPage, totalPages }) => {
     <div className="recipe-list">
       <section className="pb-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-16">
-            Blog Posts in {category}
-          </h2>
-          <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 justify-center gap-10">
-            {blogs.map((blog) => (
-              <div key={blog.sys.id}>
-                <Cards blog={blog.fields} />
+          {blogs.length > 0 && (
+            <>
+              <h2 className="text-4xl font-bold text-gray-900 text-center mb-16">
+                Blog Posts in {category}
+              </h2>
+              <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 justify-center gap-10">
+                {blogs.map((blog) => (
+                  <div key={blog.sys.id}>
+                    <Cards blog={blog.fields} />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </>
+          )}
 
+          {blogs.length === 0 && <NotFound quest={category} />}
           {/* Pagination */}
           <div className="pagination mt-12 flex justify-center items-center space-x-4">
             {currentPage > 1 && (

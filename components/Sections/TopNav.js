@@ -14,45 +14,9 @@ import {
 } from "@headlessui/react";
 import Link from "next/link";
 
-import { AiOutlineFundProjectionScreen, AiOutlineGlobal } from "react-icons/ai";
-import { MdOutlineSportsSoccer, MdOutlineBusinessCenter } from "react-icons/md";
-import { BiNews } from "react-icons/bi";
 import { MdPhone, MdPlayCircleOutline } from "react-icons/md";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-
-const categorys = [
-  {
-    name: "Sport",
-    description: "Explore the latest in sports.",
-    href: "/category/Sport",
-    icon: MdOutlineSportsSoccer,
-  },
-  {
-    name: "Tech",
-    description: "Discover trending technology.",
-    href: "/category/Tech",
-    icon: AiOutlineFundProjectionScreen,
-  },
-  {
-    name: "News",
-    description: "Stay updated with breaking news.",
-    href: "/category/News",
-    icon: BiNews,
-  },
-  {
-    name: "Business",
-    description: "Insights for growing businesses.",
-    href: "/category/Business",
-    icon: MdOutlineBusinessCenter,
-  },
-  {
-    name: "General",
-    description: "Browse a variety of topics.",
-    href: "/category/General",
-    icon: AiOutlineGlobal,
-  },
-];
-
+import { categorys } from "@/helper/utils";
 const callsToAction = [
   {
     name: "My Portfolio",
