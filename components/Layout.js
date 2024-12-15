@@ -1,12 +1,11 @@
-import Link from "next/link";
 import TopNav from "./Sections/TopNav";
 import Footer from "./Sections/Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="layout">
+    <div className="max-w-screen overflow-hidden">
       <TopNav />
-      <div className="page-content">{children}</div>
+      <div className="w-full">{children}</div>
 
       <Footer />
     </div>

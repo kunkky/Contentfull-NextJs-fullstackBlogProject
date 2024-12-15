@@ -16,7 +16,7 @@ function BlogSlider({ blogs }) {
   };
 
   return (
-    <div className="max-w-full">
+    <div className="w-full">
       <Slider {...settings}>
         {blogs.map((items) => (
           <div className="relative h-[400px] w-full">

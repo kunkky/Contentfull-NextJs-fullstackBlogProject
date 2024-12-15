@@ -62,7 +62,7 @@ const callsToAction = [
   { name: "Contact sales", href: "tel:+2348104048887", icon: MdPhone },
 ];
 
-export default function Example() {
+export default function TopNav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (

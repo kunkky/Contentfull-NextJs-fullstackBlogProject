@@ -30,9 +30,9 @@ export async function getServerSideProps({ query }) {
 
 export default function Blogs({ blogs, currentPage, totalPages }) {
   return (
-    <div className="w-full">
+    <div className="w-full ">
+      <BlogSlider blogs={blogs} />
       <section className="pb-10 ">
-        <BlogSlider blogs={blogs} />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className=" text-4xl font-bold text-gray-900 text-center mb-16 mt-10">
             Our latest blog
