@@ -24,31 +24,31 @@ const categorys = [
   {
     name: "Sport",
     description: "Explore the latest in sports.",
-    href: "/category/sport",
+    href: "/category/Sport",
     icon: MdOutlineSportsSoccer,
   },
   {
     name: "Tech",
     description: "Discover trending technology.",
-    href: "/category/tech",
+    href: "/category/Tech",
     icon: AiOutlineFundProjectionScreen,
   },
   {
     name: "News",
     description: "Stay updated with breaking news.",
-    href: "/category/news",
+    href: "/category/News",
     icon: BiNews,
   },
   {
     name: "Business",
     description: "Insights for growing businesses.",
-    href: "/category/business",
+    href: "/category/Business",
     icon: MdOutlineBusinessCenter,
   },
   {
     name: "General",
     description: "Browse a variety of topics.",
-    href: "/category/general",
+    href: "/category/General",
     icon: AiOutlineGlobal,
   },
 ];
